@@ -7,11 +7,41 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AddressForm: typeof import('./src/components/forms/AddressForm.vue')['default']
     Button: typeof import('primevue/button')['default']
-    Default: typeof import('./src/components/layouts/default.vue')['default']
+    Card: typeof import('primevue/card')['default']
+    Chip: typeof import('primevue/chip')['default']
+    Column: typeof import('primevue/column')['default']
+    CoursesForm: typeof import('./src/components/forms/CoursesForm.vue')['default']
+    DataTable: typeof import('primevue/datatable')['default']
+    DatePicker: typeof import('primevue/datepicker')['default']
     DefaultLayout: typeof import('./src/components/layouts/DefaultLayout.vue')['default']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    Editor: typeof import('primevue/editor')['default']
+    ExperiencesForm: typeof import('./src/components/forms/ExperiencesForm.vue')['default']
+    IconField: typeof import('primevue/iconfield')['default']
+    InputGroup: typeof import('primevue/inputgroup')['default']
+    InputGroupAddon: typeof import('primevue/inputgroupaddon')['default']
+    InputIcon: typeof import('primevue/inputicon')['default']
+    InputMask: typeof import('primevue/inputmask')['default']
+    InputNumber: typeof import('primevue/inputnumber')['default']
+    InputText: typeof import('primevue/inputtext')['default']
+    Message: typeof import('primevue/message')['default']
+    Password: typeof import('primevue/password')['default']
+    ProfileForm: typeof import('./src/components/forms/ProfileForm.vue')['default']
+    Rating: typeof import('primevue/rating')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SchoolingsForm: typeof import('./src/components/forms/SchoolingsForm.vue')['default']
+    Select: typeof import('primevue/select')['default']
+    Tab: typeof import('primevue/tab')['default']
+    TabList: typeof import('primevue/tablist')['default']
+    TabPanel: typeof import('primevue/tabpanel')['default']
+    TabPanels: typeof import('primevue/tabpanels')['default']
+    Tabs: typeof import('primevue/tabs')['default']
+    Tag: typeof import('primevue/tag')['default']
+    Toast: typeof import('primevue/toast')['default']
+  }
+  export interface ComponentCustomProperties {
+    Tooltip: typeof import('primevue/tooltip')['default']
   }
 }
